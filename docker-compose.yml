@@ -1,0 +1,10 @@
+version: '3'
+
+services: 
+    sinatra-api: 
+        image: muhammeddkilicc/sinatra-api:1.0
+        build: .
+        command: bundle exec rackup --host 0.0.0.0 -p 4567
+        ports:
+            - "4567:4567"
+            
